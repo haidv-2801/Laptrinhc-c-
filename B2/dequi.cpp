@@ -9,7 +9,7 @@ void print(int i) {
 }
 int main()
 {
-	print(10);
+	print(20);
 }
 
 
