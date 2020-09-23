@@ -8,8 +8,7 @@ int main()
 	for(int i=0; i<n; i++) {
 		cin >> x; 
 		p[x]++;
-		
-		if(k >= x) result += p[k-x];
+		result += p[k-x];
 	}
 	
 	cout << result;
