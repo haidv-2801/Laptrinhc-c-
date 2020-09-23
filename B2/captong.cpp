@@ -4,12 +4,12 @@ int main()
 {
 	int n, k, x, result = 0;
 	cin >> n >> k;
-	int a[500]={}; //danh dau
+	int a[1000]={}, *p=a+500; //danh dau
 	for(int i=0; i<n; i++) {
 		cin >> x; 
-		a[x]++;
+		p[x]++;
 		
-		if(k >= x) result += a[k-x];
+		if(k >= x) result += p[k-x];
 	}
 	
 	cout << result;
