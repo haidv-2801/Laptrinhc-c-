@@ -4,7 +4,7 @@ int main()
 {
 	int n, k, x, result = 0;
 	cin >> n >> k;
-	int a[1000]={}, *p=a+500; //danh dau
+	unordered_map<int,int> p;
 	for(int i=0; i<n; i++) {
 		cin >> x; 
 		p[x]++;
